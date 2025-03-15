@@ -1,0 +1,28 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0F1213] text-white antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-card rounded-xl p-6 shadow-lg transition-all duration-200 hover:shadow-xl;
+  }
+  
+  .stat-card {
+    @apply flex items-center justify-between rounded-xl bg-card p-6 shadow-lg;
+  }
+
+  .nav-link {
+    @apply flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary;
+  }
+
+  .nav-link.active {
+    @apply bg-primary/10 text-primary;
+  }
+}
